@@ -46,9 +46,20 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy product" do
     assert_difference('Product.count', -1) do
-      delete product_url(@product)
+    delete product_url(@product)
     end
 
     assert_redirected_to products_url
   end
+  
+  test "actions are visible" do
+    get products_url
+    assert_select '#main .list_actions', 3
+  end
+
+  test "3 products are visible" do
+    get products_url
+    assert_select '#main .list_description', 3
+  end
+
 end
