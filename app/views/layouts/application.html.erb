@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pragprog Books Online Store</title>
+	<title>The Great Online Flipkart Store</title>
 	<%= stylesheet_link_tag "application", media: "all",
 	"data-turbolinks-track" => 'reload' %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
@@ -9,21 +9,21 @@
 </head>
 <body class="<%= controller.controller_name %>">
 	<div id="banner">
-		<%= image_tag 'logo.svg', alt: 'The Pragmatic Bookshelf' %>
+		<div class="toplogo"><a href="http://localhost:3000"><%= image_tag 'fk_logo.png', alt: 'Flipkart - Cartel of Dreams' %></a></div>
 		<span class="title"><%= @page_title %></span>
 	</div>
 	<div id="columns">
 		<div id="side">
 			<div id=timenow>
 				<p>
-					You visited </br> <i>The Pragmatic Bookshelf</i> at </br> <%= Time.now %>
+					You visited </br> <i>The Flipkart Store</i> at </br> <%= Time.now %>
 				</p>
 			</div>
 			<ul>
 				<li><a href="http://localhost:3000">Home</a></li>
-				<li><a href="http://www..../faq">Questions</a></li>
-				<li><a href="http://www..../news">News</a></li>
-				<li><a href="http://www..../contact">Contact</a></li>
+				<li><a href="http://localhost:3000">Questions</a></li>
+				<li><a href="http://localhost:3000">News</a></li>
+				<li><a href="http://localhost:3000">Contact</a></li>
 			</ul>
 		</div>
 		<div id="main">
